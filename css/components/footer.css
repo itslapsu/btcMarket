@@ -10,7 +10,7 @@
     letter-spacing: 1px;
     font-size: 12px;
     font-weight: 400;
-    color: #18181B;
+    color: #18181b;
 }
 
 .footer .list-item {
@@ -27,10 +27,9 @@
 
 .footer .list-item .item a {
     text-decoration: none;
-    color: #3F3F46;
+    color: #3f3f46;
     font-size: 12px;
     transform: translateY(2px);
-
 }
 
 .footer .list-item .item img {
@@ -74,6 +73,7 @@
 
     .footer .footer-down {
         justify-content: center;
+        margin-top: 16px;
     }
 
     .footer .footer-down .copyright {

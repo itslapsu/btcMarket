@@ -1,5 +1,5 @@
 .exchange {
-    background-color: #FAFAFA;
+    background-color: #fafafa;
     padding-top: 164px;
     text-align: center;
 }
@@ -30,7 +30,6 @@
     margin-left: 8px;
 }
 
-
 .exchange .section-image {
     display: block;
     margin-top: 68px;
@@ -47,6 +46,10 @@
 }
 
 @media screen and (max-width: 768px) {
+    .exchange {
+        padding-top: 32px;
+    }
+
     .exchange .list-item .item {
         flex-basis: 100%;
     }
