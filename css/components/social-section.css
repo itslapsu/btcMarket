@@ -1,0 +1,36 @@
+.social {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: center;
+    margin-top: 64px;
+}
+
+.social .item {
+    display: flex;
+}
+
+.social .item a {
+    margin-left: 8px;
+    text-decoration: none;
+    color: #000;
+    transition: .3s transform;
+}
+
+.social .item a:hover{
+    transform: translateX(-1px);
+}
+
+@media screen and (max-width: 768px) {
+    .social .item {
+        flex-basis: 33%;
+        justify-content: center;
+        margin-top: 24px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .social .item {
+        flex-basis: 50%;
+    }
+}

@@ -1,0 +1,53 @@
+.exchange {
+    background-color: #FAFAFA;
+    padding-top: 164px;
+    text-align: center;
+}
+
+.exchange h3 {
+    display: block;
+    max-width: 530px;
+    margin: 0 auto;
+}
+
+.exchange .subtitle {
+    margin-top: 32px;
+}
+
+.exchange .list-item {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 48px;
+    margin-bottom: 100px;
+}
+
+.exchange .list-item .item {
+    display: flex;
+}
+
+.exchange .list-item .item p {
+    margin-left: 8px;
+}
+
+
+.exchange .section-image {
+    display: block;
+    margin-top: 68px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (max-width: 768px) {
+    .exchange .list-item .item {
+        flex-basis: 50%;
+        justify-content: center;
+        margin-top: 24px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .exchange .list-item .item {
+        flex-basis: 100%;
+    }
+}

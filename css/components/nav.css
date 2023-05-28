@@ -1,0 +1,24 @@
+.header nav ul {
+    display: flex;
+}
+
+.header nav li:not(:last-child) {
+    margin-right: 56px;
+}
+
+.header nav li a:not(.white-btn, .green-btn) {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    border-bottom: 2px solid transparent;
+    transition: .2s all;
+}
+
+.header nav li a:hover:not(.white-btn, .green-btn) {
+    color: #444;
+    border-bottom: 2px solid #444;
+}
+
+.header .green-btn {
+    margin-left: -36px;
+}

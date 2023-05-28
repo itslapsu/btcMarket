@@ -1,0 +1,51 @@
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 168px;
+}
+
+.main .content {
+    flex-basis: 50%;
+}
+
+.main .content .subtitle {
+    margin-top: 34px;
+    margin-bottom: 30px;
+}
+
+.main .content .white-btn,
+.main .content .green-btn {
+    font-size: 16px;
+    margin-right: 16px;
+}
+
+.main .image {
+    flex-basis: 50%;
+    text-align: center;
+
+}
+
+.main .image img {
+    transition: .3s all;
+}
+
+.main .image img:hover {
+    transform: translateY(-1px);
+}
+
+@media screen and (max-width: 768px) {
+    .main {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .main .content {
+        flex-basis: 100%;
+    }
+
+    .main .image {
+        margin-top: 36px;
+        flex-basis: 100%;
+    }
+}

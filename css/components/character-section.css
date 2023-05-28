@@ -1,0 +1,78 @@
+.character {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 210px;
+}
+
+.character .content {
+    flex-basis: 50%;
+}
+
+.character .image {
+    flex-basis: 50%;
+}
+
+.character:last-child {
+    margin-bottom: 190px;
+}
+
+.character .content h3 {
+    margin-bottom: 64px;
+}
+
+.character .content .list-item {
+    display: flex;
+    justify-content: start;
+}
+
+.character .content .list-item:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.character .content .list-item .item {
+    max-width: 260px;
+
+}
+
+.character .content .list-item .item:not(:last-child) {
+    margin-right: 66px;
+}
+
+.character .content .list-item .item img {
+    margin-bottom: 8px;
+}
+
+.character .content .list-item .item .title {
+    margin-bottom: 18px;
+    font-size: 16px;
+
+}
+
+.character .content .list-item .item .subtitle {
+    font-size: 15px;
+}
+
+@media screen and (max-width: 768px) {
+    .character {
+        text-align: center;
+    }
+
+    .character .content .list-item {
+        justify-content: center;
+    }
+
+    .character .content {
+        flex-basis: 100%;
+    }
+
+    .character .one {
+        flex-basis: 100%;
+        transform: translateY(35px);
+    }
+
+    .character .two {
+        flex-basis: 100%;
+        transform: translateY(-35px);
+    }
+}
