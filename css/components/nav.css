@@ -1,24 +1,84 @@
-.header nav ul {
+.nav ul {
     display: flex;
+    flex-wrap: wrap;
 }
 
-.header nav li:not(:last-child) {
+.nav li:not(:last-child) {
     margin-right: 56px;
 }
 
-.header nav li a:not(.white-btn, .green-btn) {
+.nav li a:not(.btn) {
     text-decoration: none;
     color: black;
     font-size: 16px;
     border-bottom: 2px solid transparent;
-    transition: .2s all;
+    transition: 0.3s all;
 }
 
-.header nav li a:hover:not(.white-btn, .green-btn) {
+.nav li a:hover:not(.btn) {
     color: #444;
     border-bottom: 2px solid #444;
 }
 
-.header .green-btn {
+.nav .btn.green {
     margin-left: -36px;
+}
+
+@media screen and (max-width: 1024px) {
+    .nav li:not(:last-child) {
+        margin-right: 26px;
+    }
+
+    .nav li a:not(.btn) {
+        font-size: 14px;
+    }
+
+    .nav .btn.green {
+        margin-left: -16px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .nav {
+        z-index: 2;
+        overflow: auto;
+        position: absolute;
+        left: 0;
+        top: -1000px;
+        width: 100vw;
+        height: 100vh;
+        text-align: center;
+        background-color: #fff;
+        margin-top: 40px;
+        transition: 0.3s all;
+    }
+
+    .nav.active {
+        top: 0;
+    }
+
+    .nav ul {
+        display: block;
+    }
+
+    .nav li a:not(.btn) {
+        font-size: 16px;
+    }
+
+    .nav ul li {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+
+    .nav ul li:last-child {
+        margin-top: 30px;
+    }
+
+    .nav .btn.green {
+        margin-left: 0px;
+    }
+
+    .nav li:not(:last-child) {
+        margin-right: 0px;
+    }
 }

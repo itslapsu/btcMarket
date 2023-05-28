@@ -8,6 +8,7 @@
 
 .header .logo-url {
     display: flex;
+    z-index: 3;
 }
 
 .header .logo {
@@ -15,28 +16,40 @@
 }
 
 .header .burger {
+    z-index: 3;
     display: none;
     position: relative;
     width: 30px;
     height: 20px;
 }
 
-.header .burger:after,
-.header .burger:before {
+.header .burger::after,
+.header .burger::before {
     content: "";
     position: absolute;
     background-color: #000;
     height: 2px;
     width: 100%;
     left: 0;
+    transition: 0.3s all;
 }
 
-.header .burger:before {
+.header .burger::before {
     top: 0;
 }
 
-.header .burger:after {
+.header .burger::after {
     bottom: 0;
+}
+
+.header .burger.active::after {
+    top: 9px;
+    transform: rotate(45deg);
+}
+
+.header .burger.active::before {
+    top: 9px;
+    transform: rotate(-45deg);
 }
 
 .header .burger span {
@@ -46,21 +59,16 @@
     width: 100%;
     height: 2px;
     top: 9px;
+    transition: 0.3s all;
 }
 
-.header .nav {
-    position: absolute;
-    flex-basis: 50%;
+.header .burger.active span {
+    transform: scale(0);
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 768px) {
     .header .burger {
         display: block;
-    }
-
-    .header .nav {
-        position: fixed;
-        top: 0;
-        left: 0;
+        margin-right: 10px;
     }
 }

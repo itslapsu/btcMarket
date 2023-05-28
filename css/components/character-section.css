@@ -32,7 +32,6 @@
 
 .character .content .list-item .item {
     max-width: 260px;
-
 }
 
 .character .content .list-item .item:not(:last-child) {
@@ -46,7 +45,6 @@
 .character .content .list-item .item .title {
     margin-bottom: 18px;
     font-size: 16px;
-
 }
 
 .character .content .list-item .item .subtitle {
@@ -58,6 +56,10 @@
         text-align: center;
     }
 
+    .character.reverse {
+        flex-direction: column-reverse;
+    }
+
     .character .content .list-item {
         justify-content: center;
     }
@@ -66,13 +68,8 @@
         flex-basis: 100%;
     }
 
-    .character .one {
+    .character .image {
         flex-basis: 100%;
         transform: translateY(35px);
-    }
-
-    .character .two {
-        flex-basis: 100%;
-        transform: translateY(-35px);
     }
 }
