@@ -46,15 +46,15 @@
         left: 0;
         top: -1000px;
         width: 100vw;
-        height: 100vh;
+        height: calc(100vh - 78px);
         text-align: center;
         background-color: #fff;
-        margin-top: 92px;
+        padding-top: 16px;
         transition: 0.3s all;
     }
 
     .nav.active {
-        top: 0;
+        top: 78px;
     }
 
     .nav ul {
